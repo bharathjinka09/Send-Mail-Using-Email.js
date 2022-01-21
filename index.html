@@ -72,16 +72,22 @@
       // Access Token
       // random_access-token
 
-      (function () {
+      //(function () {
         // emailjs.init("USERID");
-        emailjs.init("user_SXwbm2bfwtluGBhARcTaf");
-      })();
+        //emailjs.init("user_SXwbm2bfwtluGBhARcTaf");
+      //})();
 
       /**
         emailjs.send("SERVICE ID", "TEMPLATE NAME", {
           to_name: "USERNAME",
           from_name: "FROM NAME",
           message: "MESSAGE",
+        });
+        
+        emailjs.send("service_6609izw","template_u8kza7c",{
+          name: "nn",
+          email: "bharathjinka09@gmail.com",
+          message: "hbhb",
         });
        **/
 
@@ -107,9 +113,14 @@
       validate();
 
       function sendmail(name, email, msg) {
-        emailjs.send("service_id", "template_name", {
-          to_name: "your recipient name",
-          from_name: email,
+//         emailjs.send("service_id", "template_name", {
+//           to_name: "Bharath",
+//           from_name: email,
+//           message: msg,
+//         });
+        emailjs.send("service_6609izw","template_u8kza7c",{
+          name: name,
+          email: email,
           message: msg,
         });
       }
